@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4940AD1A1DA4205500A5E960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD191DA4205500A5E960 /* AppDelegate.swift */; };
+		4940AD1C1DA4205500A5E960 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD1B1DA4205500A5E960 /* MapViewController.swift */; };
+		4940AD1F1DA4205500A5E960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4940AD1D1DA4205500A5E960 /* Main.storyboard */; };
+		4940AD211DA4205500A5E960 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4940AD201DA4205500A5E960 /* Assets.xcassets */; };
+		4940AD241DA4205500A5E960 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4940AD221DA4205500A5E960 /* LaunchScreen.storyboard */; };
+		4940AD2F1DA4205600A5E960 /* Bread_CrumbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD2E1DA4205600A5E960 /* Bread_CrumbTests.swift */; };
+		4940AD3A1DA4205600A5E960 /* Bread_CrumbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD391DA4205600A5E960 /* Bread_CrumbUITests.swift */; };
+		4940AD481DA534A500A5E960 /* UIColorExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD471DA534A500A5E960 /* UIColorExtention.swift */; };
+		4940AD4B1DA54B0A00A5E960 /* ViewController Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD4A1DA54B0A00A5E960 /* ViewController Extension.swift */; };
+		4940AD4E1DA54BEE00A5E960 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD4C1DA54BEE00A5E960 /* CoreDataStack.swift */; };
+		4940AD4F1DA54BEE00A5E960 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD4D1DA54BEE00A5E960 /* GCDBlackBox.swift */; };
+		4940AD531DA55DA900A5E960 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD511DA55DA900A5E960 /* Model.xcdatamodeld */; };
+		4940AD5A1DA55F2000A5E960 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD541DA55F2000A5E960 /* Note+CoreDataProperties.swift */; };
+		4940AD5B1DA55F2000A5E960 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD551DA55F2000A5E960 /* Note.swift */; };
+		4940AD5C1DA55F2000A5E960 /* Pin+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD561DA55F2000A5E960 /* Pin+CoreDataProperties.swift */; };
+		4940AD5D1DA55F2000A5E960 /* Pin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD571DA55F2000A5E960 /* Pin.swift */; };
+		4940AD5E1DA55F2000A5E960 /* Photo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD581DA55F2000A5E960 /* Photo+CoreDataProperties.swift */; };
+		4940AD5F1DA55F2000A5E960 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD591DA55F2000A5E960 /* Photo.swift */; };
+		4940AD611DA5638F00A5E960 /* BreadPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD601DA5638F00A5E960 /* BreadPin.swift */; };
+		4940AD631DA563AF00A5E960 /* SharedDataClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD621DA563AF00A5E960 /* SharedDataClient.swift */; };
+		4940AD651DA569C900A5E960 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD641DA569C900A5E960 /* CoreDataViewController.swift */; };
+		4940AD691DA5AF9B00A5E960 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD681DA5AF9B00A5E960 /* NoteViewController.swift */; };
+		494803BC1DB6FCF400FDC777 /* GooglePlacesConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494803BB1DB6FCF400FDC777 /* GooglePlacesConstants.swift */; };
+		49A7FA0A1DAD64DE0066F120 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7FA091DAD64DE0066F120 /* ImageViewController.swift */; };
+		49B1CB2E1DB1B4AA00FA1A6A /* URLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CB2D1DB1B4AA00FA1A6A /* URLClient.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4940AD2B1DA4205600A5E960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4940AD0E1DA4205500A5E960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4940AD151DA4205500A5E960;
+			remoteInfo = "Bread Crumb";
+		};
+		4940AD361DA4205600A5E960 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4940AD0E1DA4205500A5E960 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4940AD151DA4205500A5E960;
+			remoteInfo = "Bread Crumb";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4940AD161DA4205500A5E960 /* Bread Crumb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bread Crumb.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4940AD191DA4205500A5E960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4940AD1B1DA4205500A5E960 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		4940AD1E1DA4205500A5E960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4940AD201DA4205500A5E960 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4940AD231DA4205500A5E960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4940AD251DA4205600A5E960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4940AD2A1DA4205600A5E960 /* Bread CrumbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bread CrumbTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4940AD2E1DA4205600A5E960 /* Bread_CrumbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bread_CrumbTests.swift; sourceTree = "<group>"; };
+		4940AD301DA4205600A5E960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4940AD351DA4205600A5E960 /* Bread CrumbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bread CrumbUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4940AD391DA4205600A5E960 /* Bread_CrumbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bread_CrumbUITests.swift; sourceTree = "<group>"; };
+		4940AD3B1DA4205600A5E960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4940AD471DA534A500A5E960 /* UIColorExtention.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtention.swift; sourceTree = "<group>"; };
+		4940AD4A1DA54B0A00A5E960 /* ViewController Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController Extension.swift"; sourceTree = "<group>"; };
+		4940AD4C1DA54BEE00A5E960 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		4940AD4D1DA54BEE00A5E960 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		4940AD521DA55DA900A5E960 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		4940AD541DA55F2000A5E960 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Note+CoreDataProperties.swift"; path = "../Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4940AD551DA55F2000A5E960 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Note.swift; path = ../Note.swift; sourceTree = "<group>"; };
+		4940AD561DA55F2000A5E960 /* Pin+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Pin+CoreDataProperties.swift"; path = "../Pin+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4940AD571DA55F2000A5E960 /* Pin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pin.swift; path = ../Pin.swift; sourceTree = "<group>"; };
+		4940AD581DA55F2000A5E960 /* Photo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Photo+CoreDataProperties.swift"; path = "../Photo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		4940AD591DA55F2000A5E960 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = ../Photo.swift; sourceTree = "<group>"; };
+		4940AD601DA5638F00A5E960 /* BreadPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreadPin.swift; sourceTree = "<group>"; };
+		4940AD621DA563AF00A5E960 /* SharedDataClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharedDataClient.swift; sourceTree = "<group>"; };
+		4940AD641DA569C900A5E960 /* CoreDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
+		4940AD681DA5AF9B00A5E960 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		494803BB1DB6FCF400FDC777 /* GooglePlacesConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesConstants.swift; sourceTree = "<group>"; };
+		49A7FA091DAD64DE0066F120 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		49B1CB2D1DB1B4AA00FA1A6A /* URLClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLClient.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4940AD131DA4205500A5E960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4940AD271DA4205600A5E960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4940AD321DA4205600A5E960 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4940AD0D1DA4205500A5E960 = {
+			isa = PBXGroup;
+			children = (
+				4940AD181DA4205500A5E960 /* Bread Crumb */,
+				4940AD2D1DA4205600A5E960 /* Bread CrumbTests */,
+				4940AD381DA4205600A5E960 /* Bread CrumbUITests */,
+				4940AD171DA4205500A5E960 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4940AD171DA4205500A5E960 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4940AD161DA4205500A5E960 /* Bread Crumb.app */,
+				4940AD2A1DA4205600A5E960 /* Bread CrumbTests.xctest */,
+				4940AD351DA4205600A5E960 /* Bread CrumbUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4940AD181DA4205500A5E960 /* Bread Crumb */ = {
+			isa = PBXGroup;
+			children = (
+				4940AD671DA5AEE500A5E960 /* ViewControllers */,
+				4940AD501DA54BF700A5E960 /* Model */,
+				4940AD491DA5351900A5E960 /* Extension */,
+				4940AD191DA4205500A5E960 /* AppDelegate.swift */,
+				4940AD1D1DA4205500A5E960 /* Main.storyboard */,
+				4940AD201DA4205500A5E960 /* Assets.xcassets */,
+				4940AD221DA4205500A5E960 /* LaunchScreen.storyboard */,
+				4940AD251DA4205600A5E960 /* Info.plist */,
+				4940AD511DA55DA900A5E960 /* Model.xcdatamodeld */,
+			);
+			path = "Bread Crumb";
+			sourceTree = "<group>";
+		};
+		4940AD2D1DA4205600A5E960 /* Bread CrumbTests */ = {
+			isa = PBXGroup;
+			children = (
+				4940AD2E1DA4205600A5E960 /* Bread_CrumbTests.swift */,
+				4940AD301DA4205600A5E960 /* Info.plist */,
+			);
+			path = "Bread CrumbTests";
+			sourceTree = "<group>";
+		};
+		4940AD381DA4205600A5E960 /* Bread CrumbUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4940AD391DA4205600A5E960 /* Bread_CrumbUITests.swift */,
+				4940AD3B1DA4205600A5E960 /* Info.plist */,
+			);
+			path = "Bread CrumbUITests";
+			sourceTree = "<group>";
+		};
+		4940AD491DA5351900A5E960 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4940AD4A1DA54B0A00A5E960 /* ViewController Extension.swift */,
+				4940AD471DA534A500A5E960 /* UIColorExtention.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		4940AD501DA54BF700A5E960 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4940AD661DA5AED400A5E960 /* Client */,
+				4940AD601DA5638F00A5E960 /* BreadPin.swift */,
+				4940AD541DA55F2000A5E960 /* Note+CoreDataProperties.swift */,
+				4940AD551DA55F2000A5E960 /* Note.swift */,
+				4940AD561DA55F2000A5E960 /* Pin+CoreDataProperties.swift */,
+				4940AD571DA55F2000A5E960 /* Pin.swift */,
+				4940AD581DA55F2000A5E960 /* Photo+CoreDataProperties.swift */,
+				4940AD591DA55F2000A5E960 /* Photo.swift */,
+				4940AD4C1DA54BEE00A5E960 /* CoreDataStack.swift */,
+				4940AD4D1DA54BEE00A5E960 /* GCDBlackBox.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4940AD661DA5AED400A5E960 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				494803BA1DB6FCD300FDC777 /* Constants */,
+				4940AD621DA563AF00A5E960 /* SharedDataClient.swift */,
+				49B1CB2D1DB1B4AA00FA1A6A /* URLClient.swift */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		4940AD671DA5AEE500A5E960 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4940AD641DA569C900A5E960 /* CoreDataViewController.swift */,
+				4940AD1B1DA4205500A5E960 /* MapViewController.swift */,
+				4940AD681DA5AF9B00A5E960 /* NoteViewController.swift */,
+				49A7FA091DAD64DE0066F120 /* ImageViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		494803BA1DB6FCD300FDC777 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				494803BB1DB6FCF400FDC777 /* GooglePlacesConstants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4940AD151DA4205500A5E960 /* Bread Crumb */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4940AD3E1DA4205600A5E960 /* Build configuration list for PBXNativeTarget "Bread Crumb" */;
+			buildPhases = (
+				4940AD121DA4205500A5E960 /* Sources */,
+				4940AD131DA4205500A5E960 /* Frameworks */,
+				4940AD141DA4205500A5E960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bread Crumb";
+			productName = "Bread Crumb";
+			productReference = 4940AD161DA4205500A5E960 /* Bread Crumb.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4940AD291DA4205600A5E960 /* Bread CrumbTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4940AD411DA4205600A5E960 /* Build configuration list for PBXNativeTarget "Bread CrumbTests" */;
+			buildPhases = (
+				4940AD261DA4205600A5E960 /* Sources */,
+				4940AD271DA4205600A5E960 /* Frameworks */,
+				4940AD281DA4205600A5E960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4940AD2C1DA4205600A5E960 /* PBXTargetDependency */,
+			);
+			name = "Bread CrumbTests";
+			productName = "Bread CrumbTests";
+			productReference = 4940AD2A1DA4205600A5E960 /* Bread CrumbTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4940AD341DA4205600A5E960 /* Bread CrumbUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4940AD441DA4205600A5E960 /* Build configuration list for PBXNativeTarget "Bread CrumbUITests" */;
+			buildPhases = (
+				4940AD311DA4205600A5E960 /* Sources */,
+				4940AD321DA4205600A5E960 /* Frameworks */,
+				4940AD331DA4205600A5E960 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4940AD371DA4205600A5E960 /* PBXTargetDependency */,
+			);
+			name = "Bread CrumbUITests";
+			productName = "Bread CrumbUITests";
+			productReference = 4940AD351DA4205600A5E960 /* Bread CrumbUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4940AD0E1DA4205500A5E960 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Valhalla Applications";
+				TargetAttributes = {
+					4940AD151DA4205500A5E960 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 2WB6695YQP;
+						LastSwiftMigration = 0800;
+					};
+					4940AD291DA4205600A5E960 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 4940AD151DA4205500A5E960;
+					};
+					4940AD341DA4205600A5E960 = {
+						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+						TestTargetID = 4940AD151DA4205500A5E960;
+					};
+				};
+			};
+			buildConfigurationList = 4940AD111DA4205500A5E960 /* Build configuration list for PBXProject "Bread Crumb" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4940AD0D1DA4205500A5E960;
+			productRefGroup = 4940AD171DA4205500A5E960 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4940AD151DA4205500A5E960 /* Bread Crumb */,
+				4940AD291DA4205600A5E960 /* Bread CrumbTests */,
+				4940AD341DA4205600A5E960 /* Bread CrumbUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4940AD141DA4205500A5E960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4940AD241DA4205500A5E960 /* LaunchScreen.storyboard in Resources */,
+				4940AD211DA4205500A5E960 /* Assets.xcassets in Resources */,
+				4940AD1F1DA4205500A5E960 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4940AD281DA4205600A5E960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4940AD331DA4205600A5E960 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4940AD121DA4205500A5E960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49B1CB2E1DB1B4AA00FA1A6A /* URLClient.swift in Sources */,
+				4940AD4E1DA54BEE00A5E960 /* CoreDataStack.swift in Sources */,
+				4940AD5D1DA55F2000A5E960 /* Pin.swift in Sources */,
+				4940AD5A1DA55F2000A5E960 /* Note+CoreDataProperties.swift in Sources */,
+				4940AD631DA563AF00A5E960 /* SharedDataClient.swift in Sources */,
+				4940AD1C1DA4205500A5E960 /* MapViewController.swift in Sources */,
+				4940AD5C1DA55F2000A5E960 /* Pin+CoreDataProperties.swift in Sources */,
+				4940AD4B1DA54B0A00A5E960 /* ViewController Extension.swift in Sources */,
+				4940AD611DA5638F00A5E960 /* BreadPin.swift in Sources */,
+				4940AD5F1DA55F2000A5E960 /* Photo.swift in Sources */,
+				4940AD691DA5AF9B00A5E960 /* NoteViewController.swift in Sources */,
+				4940AD651DA569C900A5E960 /* CoreDataViewController.swift in Sources */,
+				494803BC1DB6FCF400FDC777 /* GooglePlacesConstants.swift in Sources */,
+				4940AD5E1DA55F2000A5E960 /* Photo+CoreDataProperties.swift in Sources */,
+				4940AD531DA55DA900A5E960 /* Model.xcdatamodeld in Sources */,
+				4940AD5B1DA55F2000A5E960 /* Note.swift in Sources */,
+				4940AD1A1DA4205500A5E960 /* AppDelegate.swift in Sources */,
+				49A7FA0A1DAD64DE0066F120 /* ImageViewController.swift in Sources */,
+				4940AD4F1DA54BEE00A5E960 /* GCDBlackBox.swift in Sources */,
+				4940AD481DA534A500A5E960 /* UIColorExtention.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4940AD261DA4205600A5E960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4940AD2F1DA4205600A5E960 /* Bread_CrumbTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4940AD311DA4205600A5E960 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4940AD3A1DA4205600A5E960 /* Bread_CrumbUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4940AD2C1DA4205600A5E960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4940AD151DA4205500A5E960 /* Bread Crumb */;
+			targetProxy = 4940AD2B1DA4205600A5E960 /* PBXContainerItemProxy */;
+		};
+		4940AD371DA4205600A5E960 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4940AD151DA4205500A5E960 /* Bread Crumb */;
+			targetProxy = 4940AD361DA4205600A5E960 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4940AD1D1DA4205500A5E960 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4940AD1E1DA4205500A5E960 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4940AD221DA4205500A5E960 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4940AD231DA4205500A5E960 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4940AD3C1DA4205600A5E960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: arolson56@gmail.com (L4EESNT6Y3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4940AD3D1DA4205600A5E960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: arolson56@gmail.com (L4EESNT6Y3)";
+				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4940AD3F1DA4205600A5E960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2WB6695YQP;
+				INFOPLIST_FILE = "Bread Crumb/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewOlson.Bread-Crumb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4940AD401DA4205600A5E960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2WB6695YQP;
+				INFOPLIST_FILE = "Bread Crumb/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewOlson.Bread-Crumb";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4940AD421DA4205600A5E960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Bread CrumbTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewOlson.Bread-CrumbTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bread Crumb.app/Bread Crumb";
+			};
+			name = Debug;
+		};
+		4940AD431DA4205600A5E960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Bread CrumbTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewOlson.Bread-CrumbTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bread Crumb.app/Bread Crumb";
+			};
+			name = Release;
+		};
+		4940AD451DA4205600A5E960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Bread CrumbUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewOlson.Bread-CrumbUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Bread Crumb";
+			};
+			name = Debug;
+		};
+		4940AD461DA4205600A5E960 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Bread CrumbUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AndrewOlson.Bread-CrumbUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Bread Crumb";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4940AD111DA4205500A5E960 /* Build configuration list for PBXProject "Bread Crumb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4940AD3C1DA4205600A5E960 /* Debug */,
+				4940AD3D1DA4205600A5E960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4940AD3E1DA4205600A5E960 /* Build configuration list for PBXNativeTarget "Bread Crumb" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4940AD3F1DA4205600A5E960 /* Debug */,
+				4940AD401DA4205600A5E960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4940AD411DA4205600A5E960 /* Build configuration list for PBXNativeTarget "Bread CrumbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4940AD421DA4205600A5E960 /* Debug */,
+				4940AD431DA4205600A5E960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4940AD441DA4205600A5E960 /* Build configuration list for PBXNativeTarget "Bread CrumbUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4940AD451DA4205600A5E960 /* Debug */,
+				4940AD461DA4205600A5E960 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4940AD511DA55DA900A5E960 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4940AD521DA55DA900A5E960 /* Model.xcdatamodel */,
+			);
+			currentVersion = 4940AD521DA55DA900A5E960 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4940AD0E1DA4205500A5E960 /* Project object */;
+}
