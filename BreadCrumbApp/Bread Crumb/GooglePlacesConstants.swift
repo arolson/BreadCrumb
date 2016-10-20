@@ -11,17 +11,19 @@ import UIKit
 struct GooglePlaces {
     static let APIScheme = "https"
     static let APIHost = "maps.googleapis.com"
-    static let APIPath = "/api/place/nearbysearch/json"
+    static let APIPath = "/maps/api/place/nearbysearch/json"
 }
 
 // MARK: GooglePlaces Parameter Keys
 struct GooglePlacesParameterKeys {
     static let Location = "location"
     static let Radius = "radius"
-    static let Api = "api"
+    static let Api = "key"
+    static let OpenNow = "opennow"
 }
 // MARK: GooglePlaces Value Keys
 struct GooglePlacesValueKeys {
     static let Radius = "500"
-    static let Api = "AIzaSyAdNa9B_ryq_OgX8rhSaVPUvMDA2pyjyOc"
+    static let Api = "AIzaSyDQOxt9ixiYxwkaIIkblh47JFAidO_l8JM"
+    static let OpenNow = "1"
 }

@@ -30,6 +30,7 @@
 		4940AD651DA569C900A5E960 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD641DA569C900A5E960 /* CoreDataViewController.swift */; };
 		4940AD691DA5AF9B00A5E960 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4940AD681DA5AF9B00A5E960 /* NoteViewController.swift */; };
 		494803BC1DB6FCF400FDC777 /* GooglePlacesConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494803BB1DB6FCF400FDC777 /* GooglePlacesConstants.swift */; };
+		494803BE1DB7EDF800FDC777 /* GooglePlacesTabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494803BD1DB7EDF800FDC777 /* GooglePlacesTabelViewController.swift */; };
 		49A7FA0A1DAD64DE0066F120 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7FA091DAD64DE0066F120 /* ImageViewController.swift */; };
 		49B1CB2E1DB1B4AA00FA1A6A /* URLClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B1CB2D1DB1B4AA00FA1A6A /* URLClient.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +82,7 @@
 		4940AD641DA569C900A5E960 /* CoreDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		4940AD681DA5AF9B00A5E960 /* NoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
 		494803BB1DB6FCF400FDC777 /* GooglePlacesConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesConstants.swift; sourceTree = "<group>"; };
+		494803BD1DB7EDF800FDC777 /* GooglePlacesTabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlacesTabelViewController.swift; sourceTree = "<group>"; };
 		49A7FA091DAD64DE0066F120 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		49B1CB2D1DB1B4AA00FA1A6A /* URLClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,6 +209,7 @@
 				4940AD1B1DA4205500A5E960 /* MapViewController.swift */,
 				4940AD681DA5AF9B00A5E960 /* NoteViewController.swift */,
 				49A7FA091DAD64DE0066F120 /* ImageViewController.swift */,
+				494803BD1DB7EDF800FDC777 /* GooglePlacesTabelViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -371,6 +374,7 @@
 				4940AD531DA55DA900A5E960 /* Model.xcdatamodeld in Sources */,
 				4940AD5B1DA55F2000A5E960 /* Note.swift in Sources */,
 				4940AD1A1DA4205500A5E960 /* AppDelegate.swift in Sources */,
+				494803BE1DB7EDF800FDC777 /* GooglePlacesTabelViewController.swift in Sources */,
 				49A7FA0A1DAD64DE0066F120 /* ImageViewController.swift in Sources */,
 				4940AD4F1DA54BEE00A5E960 /* GCDBlackBox.swift in Sources */,
 				4940AD481DA534A500A5E960 /* UIColorExtention.swift in Sources */,

@@ -22,6 +22,7 @@ class MapViewController: CoreDataViewController, MKMapViewDelegate,CLLocationMan
     
     let noteViewConrollerIdentifier = "NoteViewController"
     let imageViewControllerIdentifier = "ImageViewController"
+    let googlePlacesTableViewControllerIdentifier = "GooglePlacesTableViewControllerIdentifier"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -226,16 +227,20 @@ class MapViewController: CoreDataViewController, MKMapViewDelegate,CLLocationMan
                 print("Bad Seque.")
             }
         }
-//        else if segue.identifier == appleMapsWebViewIdentifier
-//        {
-//            if let controller = segue.destination as? AppleMapsWebViewController
-//            {
-//                let latitude = pinSelected.coordinate.latitude
-//                let longitude = pinSelected.coordinate.longitude
-//                let urlString = "https://maps.apple.com/?daddr=\(latitude),\(longitude)"
-//                controller.urlstring = urlString
-//            }
-//        }
+        else if segue.identifier == googlePlacesTableViewControllerIdentifier
+        {
+            if let controller = segue.destination as? GooglePlacesTabelViewController
+            {
+                let latitude = pinSelected.coordinate.latitude
+                let longitude = pinSelected.coordinate.longitude
+                controller.latitude = latitude
+                controller.longitude = longitude
+            }
+            else
+            {
+                print("Bad Seque.")
+            }
+        }
     }
 
     //UIActionSheet Action Builder
@@ -244,16 +249,6 @@ class MapViewController: CoreDataViewController, MKMapViewDelegate,CLLocationMan
       
         removeSelectedAnnotations()
         //Create actions for Alert ActionSheet
-        let noteAction = UIAlertAction(title: "Take Notes",style: .default)
-        {
-            action in
-            self.performSeque(identifier: self.noteViewConrollerIdentifier)
-        }
-        let photoAction = UIAlertAction(title: "Snapshot",style: .default)
-        {
-            action in
-            self.performSeque(identifier: self.imageViewControllerIdentifier)
-        }
         let navigationAction = UIAlertAction(title: "Start Navigation",style: .default)
         {
             action in
@@ -264,6 +259,21 @@ class MapViewController: CoreDataViewController, MKMapViewDelegate,CLLocationMan
             let client = URLClient.getShareInstance()
             client.openURL(urlString: urlString)
         }
+        let placesAction = UIAlertAction(title: "Places",style: .default)
+        {
+            action in
+            self.performSeque(identifier: self.googlePlacesTableViewControllerIdentifier)
+        }
+        let photoAction = UIAlertAction(title: "Snapshot",style: .default)
+        {
+            action in
+            self.performSeque(identifier: self.imageViewControllerIdentifier)
+        }
+        let noteAction = UIAlertAction(title: "Take Notes",style: .default)
+        {
+            action in
+            self.performSeque(identifier: self.noteViewConrollerIdentifier)
+        }
         let deleteAction = UIAlertAction(title: "Delete Crumb",style: .destructive)
         {
             action in
@@ -271,7 +281,7 @@ class MapViewController: CoreDataViewController, MKMapViewDelegate,CLLocationMan
             self.mapView.removeAnnotation(self.pinSelected)
         }
         let cancelAction = UIAlertAction(title: "Cancel",style: .cancel, handler: nil)
-            let actions = [navigationAction, photoAction,noteAction,deleteAction, cancelAction]
+            let actions = [navigationAction, placesAction,photoAction,noteAction,deleteAction, cancelAction]
         return (actions)
     }
     func performSeque(identifier: String)

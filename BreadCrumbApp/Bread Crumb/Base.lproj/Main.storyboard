@@ -76,6 +76,7 @@
                         <outlet property="placeBreadCrumbButton" destination="xsW-lq-pWZ" id="RJk-gu-lh9"/>
                         <segue destination="6Wd-gs-uRb" kind="show" identifier="NoteViewController" id="p9r-iv-6Rc"/>
                         <segue destination="0wu-6V-ZP3" kind="show" identifier="ImageViewController" id="Zfx-ig-Hgx"/>
+                        <segue destination="J2L-tJ-baq" kind="show" identifier="GooglePlacesTableViewControllerIdentifier" id="ayv-Zf-nGX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -182,6 +183,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FeY-um-HBw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3720.8000000000002" y="747.9760119940031"/>
+        </scene>
+        <!--Google Places Tabel View Controller-->
+        <scene sceneID="tTn-Sh-rGZ">
+            <objects>
+                <viewController id="J2L-tJ-baq" customClass="GooglePlacesTabelViewController" customModule="Bread_Crumb" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CXo-zW-8BJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="CSJ-8j-zdj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oMZ-X3-IFG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fjD-EA-iyI">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CellIdentifier" id="PAg-Y4-nmZ">
+                                        <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PAg-Y4-nmZ" id="Q2N-M2-5Xs">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="J2L-tJ-baq" id="fah-mY-5X8"/>
+                                    <outlet property="delegate" destination="J2L-tJ-baq" id="Yrd-UA-j74"/>
+                                </connections>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ded-CY-HCn">
+                                <color key="color" white="0.052747483220000002" alpha="1" colorSpace="calibratedWhite"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fjD-EA-iyI" firstAttribute="top" secondItem="oMZ-X3-IFG" secondAttribute="top" id="LCt-8K-dNB"/>
+                            <constraint firstItem="Ded-CY-HCn" firstAttribute="centerX" secondItem="oMZ-X3-IFG" secondAttribute="centerX" id="RcL-Ne-bw2"/>
+                            <constraint firstItem="CSJ-8j-zdj" firstAttribute="top" secondItem="fjD-EA-iyI" secondAttribute="bottom" id="Thn-Df-aFl"/>
+                            <constraint firstAttribute="trailing" secondItem="fjD-EA-iyI" secondAttribute="trailing" id="jva-oe-FMV"/>
+                            <constraint firstItem="Ded-CY-HCn" firstAttribute="centerY" secondItem="oMZ-X3-IFG" secondAttribute="centerY" id="tQJ-BX-jwq"/>
+                            <constraint firstItem="fjD-EA-iyI" firstAttribute="leading" secondItem="oMZ-X3-IFG" secondAttribute="leading" id="uur-xF-k4Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="GooglePlacesTableView" destination="fjD-EA-iyI" id="Ulw-X6-C7W"/>
+                        <outlet property="activityIndicator" destination="Ded-CY-HCn" id="27d-wU-ncl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEF-MD-CLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3720.8000000000002" y="1394.7526236881561"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hpY-LR-OvC">
