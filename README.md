@@ -3,8 +3,8 @@ Bread Crumb is a simple car locator application that aims to keep the user's exp
 This application was built as a capstone project for the Udacity IOS Developer course.
 
 <header> 
-  <h3>User Interaction<\h3>
-<\header>
+  <h3>User Interaction</h3>
+</header>
 <body>
 
 <p>
